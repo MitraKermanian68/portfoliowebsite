@@ -1,0 +1,172 @@
+@font-face{
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazirmatn-Regular.woff2) , url(./assets/fonts/Vazirmatn-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazirmatn-Bold.ttf) , url(./assets/fonts/Vazirmatn-Bold.woff2);
+    font-style: bold;
+    font-weight: bold;
+}
+@font-face{
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazirmatn-Thin.ttf) , url(./assets/fonts/Vazirmatn-Thin.woff2);
+    font-style: thin;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazirmatn-light.ttf) , url(./assets/fonts/Vazirmatn-Light.woff2);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazirmatn-Medium.ttf) , url(./assets/fonts/Vazirmatn-Medium.woff2);
+    font-style: normal;
+    font-weight: 500;
+}
+
+:root {
+    --backgroundColor: #202336;
+    --lightColor: #F3E5F5;
+    --darkColor: #202336;
+    --mainColor: #B388FF;
+    --mainColor100: rgba(179, 136, 255,0.1);
+    --darkMainColor: #3A2D52;
+    --grayColor:  #7777;
+}
+
+.light__theme {
+    --backgroundColor: #F3E5F5;
+    --lightColor:#202336 ;
+    --darkColor:  #F3E5F5;
+    --mainColor: #B388FF;
+    --mainColor100: rgba(179, 136, 255,0.1);
+    --darkMainColor: #3A2D52;
+    --grayColor:  #7777;
+}
+.light__theme .fixed__navbar svg path {
+    fill: #F3E5F5 !important;
+}
+*{
+    font-family: "vazir";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all ease 300ms;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    direction: rtl;
+    background: var(--backgroundColor);
+    overflow-x: hidden;
+}
+
+svg {
+    display: block;
+}
+
+svg path{
+    fill: var(--lightColor);
+}
+
+.main-btn{
+    border: none;
+    outline: none;
+    color: var(--lightColor);
+    cursor: pointer;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+}
+
+.main-btn-md{
+    padding: 0.5rem 0.8rem !important;
+}
+
+.main-btn-purple{
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.main-btn-purple:hover{
+    background: transparent;
+}
+
+.main-btn-purple-outline{
+    border: 1px solid var(--mainColor);
+}
+
+.main-btn-purple-outline:hover {
+    background-color: var(--mainColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.homeBar {
+    padding: 5rem 0;
+}
+
+.section__header__title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+   
+}
+
+.section__header__title .right__line{
+    background-color: var(--mainColor);
+    flex: 1;
+    height: 5px;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.section__header__title .left__line{
+    background-color: var(--mainColor);
+    flex: 1;
+    height: 5px;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.section__header__title .middle__line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__header__title .middle__line p:first-child{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--lightColor);
+    opacity: 0.9;
+}
+.section__header__title .middle__line p:last-child{
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--mainColor);
+}
+ .title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--lightColor);
+ }
+
+ .description {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--lightColor);
+    opacity: 0.75;
+    line-height: 1.5rem;
+ }
